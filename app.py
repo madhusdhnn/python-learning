@@ -37,3 +37,15 @@ price = float(input("Enter the amount: "))
 print(price > 10 or price < 20)
 print(price > 0 and price >= 20)
 print(not price > 0)
+
+temperature = float(input("Enter your city's temperature: "))
+if temperature > 35:
+    print("It's a hot day")
+    print("Stay healthy by driking more water")
+elif 20 < temperature <= 35:
+    print("Normal day")
+elif 10 < temperature <= 20:
+    print("Cold")
+else:
+    print("Very cold")
+print("Done")
