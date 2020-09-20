@@ -32,3 +32,8 @@ string_var = "Replace for with number"
 print(string_var.replace("for", "4"))
 
 print("Replace" in string_var)
+
+price = float(input("Enter the amount: "))
+print(price > 10 or price < 20)
+print(price > 0 and price >= 20)
+print(not price > 0)
