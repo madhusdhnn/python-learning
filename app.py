@@ -11,3 +11,6 @@ print(string_var)
 
 bool_var = False
 print(bool_var)
+
+name = input("Enter your name: ")
+print("Hey " + name)
