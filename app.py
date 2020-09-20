@@ -22,3 +22,13 @@ print(age)
 first = input("Enter first number: ")
 second = input("Enter second number: ")
 print(float(first) + float(second))
+
+string_var = "an advertisement banner title"
+print(string_var.upper())
+
+print(string_var.find("an"))
+
+string_var = "Replace for with number"
+print(string_var.replace("for", "4"))
+
+print("Replace" in string_var)
