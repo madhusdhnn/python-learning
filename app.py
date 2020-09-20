@@ -14,3 +14,11 @@ print(bool_var)
 
 name = input("Enter your name: ")
 print("Hey " + name)
+
+birth_year = input("Enter your birth year to find age: ")
+age = 2020 - int(birth_year)
+print(age)
+
+first = input("Enter first number: ")
+second = input("Enter second number: ")
+print(float(first) + float(second))
