@@ -49,3 +49,9 @@ elif 10 < temperature <= 20:
 else:
     print("Very cold")
 print("Done")
+
+i = 0
+while i <= 20:
+    print(i)
+    i += 1
+print("Loop Done")
