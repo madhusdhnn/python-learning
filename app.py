@@ -1,3 +1,5 @@
+from utils.pair_utils import Pair
+
 print("Hello world")
 
 int_var = 24
@@ -96,19 +98,6 @@ def simple_interest_calculator():
 
 
 simple_interest_calculator()
-
-
-class Pair:
-    def __init__(self, first, second):
-        self.first = first
-        self.second = second
-
-    def get_first(self):
-        return self.first
-
-    def get_second(self):
-        return self.second
-
 
 p1 = Pair(1, 2)
 p2 = Pair(0, 2)
