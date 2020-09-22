@@ -41,7 +41,7 @@ print(not price > 0)
 temperature = float(input("Enter your city's temperature: "))
 if temperature > 35:
     print("It's a hot day")
-    print("Stay healthy by driking more water")
+    print("Stay healthy by drinking more water")
 elif 20 < temperature <= 35:
     print("Normal day")
 elif 10 < temperature <= 20:
@@ -55,3 +55,44 @@ while i <= 20:
     print(i)
     i += 1
 print("Loop Done")
+
+for j in range(10, 20, 3):
+    print(f"j: {j}")
+
+list_var = [1, 2, 3, 4]
+print(f"List {list_var}")
+
+tuple_var = (1, 2, 3)
+print(f"Immutable list {tuple_var}")
+
+dictionary = {"a": 'dsf', "b": 'dfs', "c": "bye"}
+print(f"Dictionary {dictionary}")
+print(f"Values of a dictionary {dictionary.values()}")
+
+
+def predict_key_value(dictionary_var, key):
+    print("Thank God" if dictionary_var.get(key) is not None else "Oops")
+
+
+def greet_message(username):
+    return f"Hey, {username}. What's up?"
+
+
+predict_key_value(dictionary, "a")
+predict_key_value(dictionary, "d")
+
+print(greet_message("TheTechMaddy"))
+
+
+def simple_interest_calculator():
+    rate_of_interest = 11.4
+    try:
+        principle = float(input("Input principle amount: "))
+        no_of_years = int(input("Input number of years: "))
+        simple_interest = principle * (1 + (rate_of_interest / 100) * no_of_years)
+        print(f"Simple interest for {principle} amount to pay in {no_of_years} year(s) is {simple_interest}")
+    except ValueError:
+        print("Inputs should be only numbers")
+
+
+simple_interest_calculator()
