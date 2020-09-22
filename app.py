@@ -1,4 +1,4 @@
-from utils.pair_utils import Pair
+from utils.pair_utils import create_pair
 
 print("Hello world")
 
@@ -99,7 +99,7 @@ def simple_interest_calculator():
 
 simple_interest_calculator()
 
-p1 = Pair(1, 2)
-p2 = Pair(0, 2)
+p1 = create_pair(1, 2)
+p2 = create_pair(0, 2)
 print(f"first={p1.first}, second={p1.second}")
 print(f"first={p2.first}, second={p2.second}")
