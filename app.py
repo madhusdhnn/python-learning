@@ -19,9 +19,9 @@ birth_year = input("Enter your birth year to find age: ")
 age = 2020 - int(birth_year)
 print(age)
 
-first = input("Enter first number: ")
-second = input("Enter second number: ")
-print(float(first) + float(second))
+f = input("Enter first number: ")
+s = input("Enter second number: ")
+print(float(f) + float(s))
 
 string_var = "an advertisement banner title"
 print(string_var.upper())
@@ -96,3 +96,21 @@ def simple_interest_calculator():
 
 
 simple_interest_calculator()
+
+
+class Pair:
+    def __init__(self, first, second):
+        self.first = first
+        self.second = second
+
+    def get_first(self):
+        return self.first
+
+    def get_second(self):
+        return self.second
+
+
+p1 = Pair(1, 2)
+p2 = Pair(0, 2)
+print(f"first={p1.first}, second={p1.second}")
+print(f"first={p2.first}, second={p2.second}")
