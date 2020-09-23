@@ -1,3 +1,5 @@
+from os import remove
+
 from utils.pair_utils import create_pair
 
 print("Hello world")
@@ -103,3 +105,31 @@ p1 = create_pair(1, 2)
 p2 = create_pair(0, 2)
 print(f"first={p1.first}, second={p1.second}")
 print(f"first={p2.first}, second={p2.second}")
+
+
+def safe_remove_file():
+    try:
+        remove("top_students.txt")
+    except FileNotFoundError:
+        pass
+
+
+safe_remove_file()
+
+
+def extract_top_students(input_file, output_file):
+    try:
+        top_students = open(output_file, "a")
+        text_file = open(input_file, "r")
+
+        for line in text_file.readlines():
+            if int(line.split("-")[1]) > 80:
+                top_students.write(f"{line}")
+
+        text_file.close()
+        top_students.close()
+    except FileNotFoundError as e:
+        print(e)
+
+
+extract_top_students("students.txt", "top_students.txt")
