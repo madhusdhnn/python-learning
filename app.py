@@ -95,8 +95,8 @@ def simple_interest_calculator():
         no_of_years = int(input("Input number of years: "))
         simple_interest = principle * (1 + (rate_of_interest / 100) * no_of_years)
         print(f"Simple interest for {principle} amount to pay in {no_of_years} year(s) is {simple_interest}")
-    except ValueError as ver:
-        print(f"Inputs should be only numbers. Error message: {ver}")
+    except ValueError:
+        print("Inputs should be only numbers")
 
 
 simple_interest_calculator()
