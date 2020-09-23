@@ -1,5 +1,8 @@
 from os import remove
 
+from restaurant.multi_cuisine import MultiCuisineChef
+from restaurant.non_vegetarian import NonVeganChef
+from restaurant.vegetarian import VeganChef
 from utils.pair_utils import create_pair
 
 print("Hello world")
@@ -133,3 +136,16 @@ def extract_top_students(input_file, output_file):
 
 
 extract_top_students("students.txt", "top_students.txt")
+
+chef_one = MultiCuisineChef("Chandler")
+chef_one.make_sandwitch()
+chef_one.make_chicken()
+chef_one.make_veg_burger()
+
+chef_two = VeganChef("Phoebe")
+chef_two.make_sandwitch()
+chef_two.make_veg_meal()
+
+chef_three = NonVeganChef("Joey")
+chef_three.make_sandwitch()
+chef_three.make_bbq()
